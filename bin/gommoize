@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+
+text = ARGV.shift || $stdin.read
+puts text.gsub(/[aeiou]/, 'o').gsub(/[AEIOU]/, 'O')
